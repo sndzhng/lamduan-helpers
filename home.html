@@ -46,10 +46,23 @@
         background: white;
         color: black;
       }
-      .glyphicon {
+      .gi-content {
       font-size: 40px;
       margin: 0 0 30px 0;
       color: rgb(150,0,0);
+      }
+      .gi-contact {
+        font-size: 16px;
+        margin: 0 10px 0 0;
+      }
+      .btn[name="edit-button"] {
+        background: white;
+        border: none;
+      }
+      .btn[name="content-button"] {
+        background: rgb(150,0,0);
+        color: white;
+        border: none;
       }
     </style>
     <title>Lamduan Helpers</title>
@@ -82,18 +95,17 @@
     <div class="navbarpadding"></div>
     <!-- ////////// Profile ////////// -->
     <div id="profile" class="container-fluid">
-      <div class="row">
-        <img class="profilepic" src="static/pictures/profile.jpg" alt="">
-        <h2>Jane Doe</h2><br>
+        <img class="profilepic" src="static/pictures/profile.jpg">
+        <h2>Jane Doe</h2>
         <h4>Software Engineering Major</h4>
-        <h4>School of Information Technology</h4>
-        <h4>Mae Fah Luang University</h4>
-        <br>
-        <h4>User Type: Helper</h4>
-        <p>Experience: designed Hours of Community Service System webpage,
-          designed Library Borrowing System webpage</p>
-        <p>Contact: 098-765-4321, jane.doe@gmail.com</p>
-      </div>
+        <h4>School of Information Technology</h4><br>
+        <h3>Experience</h3>
+        <h5>Designed Hours of Community Service System webpage</h5>
+        <h5>Designed Library Borrowing System webpage</h5><br>
+        <h3>Contact</h3>
+        <h5><span class="glyphicon glyphicon-phone gi-contact"></span>098-765-4321</h5>
+        <h5><span class="glyphicon glyphicon-envelope gi-contact"></span>jane.doe@gmail.com</h5><br>
+        <button class="btn btn-default" name="edit-button">SOMETHING WRONG? LET'S EDIT</button>
     </div>
     <!-- ////////// Helpers ////////// -->
     <div id="content" class="container-fluid bg-light">
@@ -102,17 +114,17 @@
         <h4>Why Lamduan Helpers ?</h4><br>
         <div class="row">
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-time"></span>
+            <span class="glyphicon glyphicon-time gi-content"></span>
             <h4>REDUCE TIME</h4>
             <p>Reduce your time to search in FB</p>
           </div>
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-sort-by-attributes"></span>
+            <span class="glyphicon glyphicon-sort-by-attributes gi-content"></span>
             <h4>REARANGE INFORMATION</h4>
             <p>Make it easier to find helpers</p>
           </div>
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-magnet"></span>
+            <span class="glyphicon glyphicon-magnet gi-content"></span>
             <h4>DATA COLLECTION</h4>
             <p>Collect all of associated information</p>
           </div>
@@ -124,7 +136,7 @@
         <p>A group of people who are looking for a pastime or a freelance job to review and guide your work.</p>
         <p>You can meet people and get to know a little through the tool of us.</p>
         <p>Follow us. We will bring you to helpers who can help your work.</p><br>
-        <button class="btn btn-default btn-lg">LET'S FIND YOUR HELPER</button>
+        <button class="btn btn-default btn-lg" name="content-button">LET'S FIND YOUR HELPER</button>
       </div>
     </div>
     <!-- ////////// Contact ////////// -->
@@ -132,11 +144,11 @@
       <div class="row">
         <h2>CONTACT</h2><br>
         <h4>Our Location</h4>
-        <p>333 Moo 1, Tha Suea Muang Amphoe Mueang Chiang Rai, Chang Wat Chiang Rai 57100</p><br>
+        <p><span class="glyphicon glyphicon-map-marker gi-contact"></span>333 Moo1, Thasud, Muang, Chiang Rai 57100</p><br>
         <h4>Telephone</h4>
-        <p>012-345-6789, 096-385-2741</p><br>
+        <p><span class="glyphicon glyphicon-phone gi-contact"></span>012-345-6789, 096-385-2741</p><br>
         <h4>Email</h4>
-        <p>lamduan.helpers@lamduan.mfu.ac.th</p>
+        <p><span class="glyphicon glyphicon-envelope gi-contact"></span>lamduan.helpers@lamduan.mfu.ac.th</p>
       </div>
     </div>
 
