@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <style media="screen">
+      body {
+        background: rgb(25,10,10);
+        color: rgb(225,225,225);
+        font: 14px helvetica;
+        line-height: 2.2;
+        text-align: center;
+      }
+      .navbar {
+        background: rgb(150,0,0);
+        color: white !important;
+        letter-spacing: 2px;
+        font-family: helvetica;
+        border: 0;
+        padding: 10px 0;
+      }
+      .navbarpadding {
+        padding: 20px 0;
+      }
+      .navbar li a, .navbar .navbar-brand {
+      color: white !important;
+      }
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: rgb(150,0,0) !important;
+      background-color: white !important;
+      }
+      .container-fluid {
+        padding: 100px 50px;
+      }
+      .profilepic {
+        width: 200px;
+        height: 200px;
+        border-radius: 160px;
+        border: 3px solid rgb(150,0,0);
+      }
+      .bg-light{
+        background: white;
+        color: black;
+      }
+      .glyphicon {
+      font-size: 40px;
+      margin: 0 0 30px 0;
+      color: rgb(150,0,0);
+      }
+    </style>
+    <title>Lamduan Helpers</title>
+  </head>
+
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- ////////// Navbar ////////// -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><b>LAMDUAN HELPERS</b></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="topNav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#content">CONTENT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#logout">LOGOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="navbarpadding"></div>
+    <!-- ////////// Profile ////////// -->
+    <div id="profile" class="container-fluid">
+      <div class="row">
+        <img class="profilepic" src="static/pictures/profile.jpg" alt="">
+        <h2>Jane Doe</h2><br>
+        <h4>Software Engineering Major</h4>
+        <h4>School of Information Technology</h4>
+        <h4>Mae Fah Luang University</h4>
+        <br>
+        <h4>User Type: Helper</h4>
+        <p>Experience: designed Hours of Community Service System webpage,
+          designed Library Borrowing System webpage</p>
+        <p>Contact: 098-765-4321, jane.doe@gmail.com</p>
+      </div>
+    </div>
+    <!-- ////////// Helpers ////////// -->
+    <div id="content" class="container-fluid bg-light">
+      <div class="row">
+        <h2>SERVICE</h2><br>
+        <h4>Why Lamduan Helpers ?</h4><br>
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-time"></span>
+            <h4>REDUCE TIME</h4>
+            <p>Reduce your time to search in FB</p>
+          </div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-sort-by-attributes"></span>
+            <h4>REARANGE INFORMATION</h4>
+            <p>Make it easier to find helpers</p>
+          </div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-magnet"></span>
+            <h4>DATA COLLECTION</h4>
+            <p>Collect all of associated information</p>
+          </div>
+          </div>
+        </div>
+        <br><hr><br>
+        <h2>HELPERS</h2><br>
+        <h4>What and Who is Helpers ?</h4>
+        <p>A group of people who are looking for a pastime or a freelance job to review and guide your work.</p>
+        <p>You can meet people and get to know a little through the tool of us.</p>
+        <p>Follow us. We will bring you to helpers who can help your work.</p><br>
+        <button class="btn btn-default btn-lg">LET'S FIND YOUR HELPER</button>
+      </div>
+    </div>
+    <!-- ////////// Contact ////////// -->
+    <div id="contact" class="container-fluid">
+      <div class="row">
+        <h2>CONTACT</h2><br>
+        <h4>Our Location</h4>
+        <p>333 Moo 1, Tha Suea Muang Amphoe Mueang Chiang Rai, Chang Wat Chiang Rai 57100</p><br>
+        <h4>Telephone</h4>
+        <p>012-345-6789, 096-385-2741</p><br>
+        <h4>Email</h4>
+        <p>lamduan.helpers@lamduan.mfu.ac.th</p>
+      </div>
+    </div>
+
+    </body>
+</html>
